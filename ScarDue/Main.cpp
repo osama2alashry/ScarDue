@@ -60,8 +60,8 @@ int main()
 	// So that means we only have the modern functions
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-	// Create a GLFWwindow object of 800 by 800 pixels, naming it "YoutubeOpenGL"
-	GLFWwindow* window = glfwCreateWindow(width, height, "YoutubeOpenGL", NULL, NULL);
+	// Create a GLFWwindow object of 800 by 800 pixels, naming it "ScarDue"
+	GLFWwindow* window = glfwCreateWindow(width, height, "ScarDue", NULL, NULL);
 	// Error check if the window fails to create
 	if (window == NULL)
 	{
@@ -216,9 +216,9 @@ int main()
 
 	// Paths to textures
 	std::string parentDir = (fs::current_path().fs::path::parent_path()).string();
-	std::string diffusePath = "/Resources/YoutubeOpenGL 30 - Bloom/textures/diffuse.png";
-	std::string normalPath = "/Resources/YoutubeOpenGL 30 - Bloom/textures/normal.png";
-	std::string displacementPath = "/Resources/YoutubeOpenGL 30 - Bloom/textures/displacement.png";
+	std::string diffusePath = "/Resources/Model/textures/diffuse.png";
+	std::string normalPath = "/Resources/Model/textures/normal.png";
+	std::string displacementPath = "/Resources/Model/textures/displacement.png";
 
 	std::vector<Texture> textures =
 	{
@@ -246,7 +246,7 @@ int main()
 			// Creates new title
 			std::string FPS = std::to_string((1.0 / timeDiff) * counter);
 			std::string ms = std::to_string((timeDiff / counter) * 1000);
-			std::string newTitle = "YoutubeOpenGL - " + FPS + "FPS / " + ms + "ms";
+			std::string newTitle = "ScarDue - " + FPS + "FPS / " + ms + "ms";
 			glfwSetWindowTitle(window, newTitle.c_str());
 
 			// Resets times and counter
