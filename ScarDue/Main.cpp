@@ -1,9 +1,6 @@
 #define GLM_ENABLE_EXPERIMENTAL
-//------- Ignore this ----------
 #include<filesystem>
 namespace fs = std::filesystem;
-//------------------------------
-
 #include"Model.h"
 
 
